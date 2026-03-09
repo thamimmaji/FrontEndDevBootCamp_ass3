@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
 <title>Front-End Development Bootcamp</title>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <h1 align="center">Front-End Development Bootcamp</h1>
-
 <p align="center">Register for our Front-End Development Bootcamp event.</p>
 
 <hr>
@@ -21,27 +19,17 @@
 <table border="1" cellpadding="10">
 
 <tr>
-
 <th>Event Name</th>
-
 <th>Event Date</th>
-
 <th>Time</th>
-
 <th>Venue</th>
-
 </tr>
 
 <tr>
-
 <td>Front-End Development Bootcamp</td>
-
 <td>20 April 2026</td>
-
 <td>10:00 AM</td>
-
 <td>College Auditorium</td>
-
 </tr>
 
 </table>
@@ -50,34 +38,26 @@
 
 <h2>Registration Form</h2>
 
-<form>
+<form id="registrationForm">
 
 <fieldset>
-
 <legend>Personal Information</legend>
 
 Name:<br>
-
-<input type="text"><br><br>
+<input type="text" id="name"><br><br>
 
 Email:<br>
-
-<input type="email"><br><br>
+<input type="email" id="email"><br><br>
 
 Phone Number:<br>
-
-<input type="tel"><br><br>
+<input type="tel" id="phone"><br><br>
 
 Date of Birth:<br>
-
 <input type="date"><br><br>
 
 Gender:<br>
-
 <input type="radio" name="g"> Male
-
 <input type="radio" name="g"> Female
-
 <input type="radio" name="g"> Other
 
 </fieldset>
@@ -85,59 +65,47 @@ Gender:<br>
 <br>
 
 <fieldset>
-
 <legend>Event Selection</legend>
 
 Select Event:<br>
 
-<select>
-
+<select id="event">
 <option>Front-End Development Bootcamp</option>
-
 <option>Programming Seminar</option>
-
 <option>Technology Webinar</option>
-
 </select>
 
 <br><br>
 
 Mode of Participation:<br>
-
-<input type="radio" name="m"> Online
-
-<input type="radio" name="m"> Offline
+<input type="radio" name="mode" value="Online"> Online
+<input type="radio" name="mode" value="Offline"> Offline
 
 </fieldset>
 
 <br>
 
 <fieldset>
-
 <legend>Additional Details</legend>
 
 College / Company Name:<br>
-
 <input type="text"><br><br>
 
 Upload ID Proof:<br>
-
 <input type="file"><br><br>
 
 Comments / Expectations:<br>
-
 <textarea rows="4" cols="40"></textarea>
 
 </fieldset>
 
 <br>
 
-<input type="checkbox"> I confirm that the above details are correct.
+<input type="checkbox" id="confirm"> I confirm that the above details are correct.
 
 <br><br>
 
 <input type="submit" value="Submit">
-
 <input type="reset" value="Reset">
 
 </form>
@@ -149,31 +117,19 @@ Comments / Expectations:<br>
 <table border="1" cellpadding="10">
 
 <tr>
-
 <th>Name</th>
-
 <th>Email</th>
-
 <th>Phone</th>
-
 <th>Event</th>
-
 <th>Mode</th>
-
 </tr>
 
 <tr>
-
 <td>Sample Name</td>
-
 <td>sample@email.com</td>
-
 <td>9876543210</td>
-
 <td>Front-End Development Bootcamp</td>
-
 <td>Online</td>
-
 </tr>
 
 </table>
@@ -183,13 +139,13 @@ Comments / Expectations:<br>
 <footer>
 
 <p>Contact Email: support@event.com</p>
-
 <p>Help Desk Number: 9876543210</p>
-
 <p>© 2026 Front-End Development Bootcamp</p>
 
 </footer>
 
-</body>
+<!-- JavaScript File -->
+<script src="script.js"></script>
 
+</body>
 </html>
